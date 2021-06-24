@@ -1,0 +1,23 @@
+{
+  "name": "products",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "csv-parse": "^4.16.0",
+    "csv-parser": "^3.0.0",
+    "csvtomongodb-converter": "^1.1.1",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "fs": "^0.0.1-security",
+    "JSONStream": "^1.3.5",
+    "mongoimport": "^1.0.6",
+    "mongoose": "^5.12.14",
+    "morgan": "~1.9.1",
+    "node-fetch": "^2.6.1",
+    "papaparse": "^5.3.1"
+  }
+}

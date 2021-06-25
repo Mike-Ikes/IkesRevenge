@@ -3,7 +3,7 @@ var path = require('path');
 var mongoose = require('mongoose');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-var productRoute = require('./routes/productRoute');
+var productRouter = require('./routes/productRoute');
 
 //connect to database
 let options = {
@@ -24,7 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
   
 //handle incoming request routing to individual models
-app.use('/products', productRoute);
+app.use('/products', productRouter);
 module.exports = app;
 
 

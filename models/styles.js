@@ -5,8 +5,8 @@ const styles = new Schema({
     id: Number,
     productId: Number,
     name: String,
-    sale_price: String,
     original_price: String,
+    sale_price: String,
     default_style: Boolean,
 });
 

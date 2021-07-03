@@ -1,0 +1,7 @@
+node_modules/
+node_modules/superagent/dist/superagent.js
+aggregateMongoCommands.txt
+dataAggregationMongoDBCompass.JPG
+MW_JestTestPostRequestRoutes.png
+Products/docker-compose.yml
+Products/Dockerfile

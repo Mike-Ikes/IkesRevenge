@@ -1,0 +1,22 @@
+version: '3.7'
+services:
+  web:
+    build: palm0210/products_web
+    #build: .
+    ports:
+      - "3001:3001"
+    depends_on:
+      - mongodb
+  mongodb:
+    image: palm0210/mongo
+    #image: mongo:latest
+    ports:
+    - "27017:27017"
+    volumes:
+      - mongodata:/var/lib/docker/volumes/products_mongodata/_data
+      #- mongodata:/data/db
+      - mongoconfig:/var/lib/docker/volumes/products_mongoconfig/_data
+      #- mongoconfig:/data/configdb
+volumes:
+  mongodata:
+  mongoconfig:

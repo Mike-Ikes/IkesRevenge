@@ -8,5 +8,5 @@ const photo = new Schema({
     thumbnail_url: String,
 });
 
-const photoExport = mongoose.model('photo', photo);
+const photoExport = mongoose.model('photos', photo);
 module.exports = photoExport;

@@ -14,7 +14,7 @@ let options = {
   useFindAndModify: false,
   useCreateIndex: true
 }
-mongoose.connect('mongodb://mongodb:27017/products', options)
+mongoose.connect('mongodb://localhost:27017/products', options)
   .then(() => console.log("Connected to Mongo on localhost:27017/products!"))
   .catch(err => console.error("Mongoose error: " + err))
 var app = express();
